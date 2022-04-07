@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using ConsoleAppProject.App04;
 
 namespace ConsoleAppProject.App04
 {
@@ -26,6 +27,7 @@ namespace ConsoleAppProject.App04
         public String Message { get; }
 
         public DateTime Timestamp { get; }
+        public string V { get; }
 
         /// <summary>
         /// Constructor for objects of class MessagePost.
@@ -44,6 +46,11 @@ namespace ConsoleAppProject.App04
 
             likes = 0;
             comments = new List<String>();
+        }
+
+        public MessagePost(string v)
+        {
+            V = v;
         }
 
         /// <summary>
